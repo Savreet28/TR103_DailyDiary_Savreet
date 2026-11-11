@@ -1,0 +1,24 @@
+{
+  // Markdown is the diary source -- make it comfortable to write in.
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "[html]": {
+    "editor.tabSize": 4
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  // Generated output -- collapse it under the Markdown it comes from.
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.md": "${capture}.pdf"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

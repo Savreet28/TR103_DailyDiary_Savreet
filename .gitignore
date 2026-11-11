@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Intermediate HTML written by build_pdfs.py.
+# It is deleted automatically after each run; this is here in case a run is
+# interrupted part-way and leaves one behind.
+pdfs/*.html
+
+# NOTE: pdfs/*.pdf is deliberately NOT ignored. GitHub Pages serves those
+# files directly, so they must be committed or the website's week links 404.
+# Same for certificates/completion.pdf once you add it.

@@ -1,0 +1,258 @@
+/* ------------------ RESET ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ BODY & BACKGROUND ------------------ */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e9daff, #6d28d9);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ------------------ HEADER ------------------ */
+.formal-top-header {
+  background: #fff;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-logos-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-logo-small {
+  width: 80px;
+  height: auto;
+}
+
+.college-info-text {
+  text-align: center;
+}
+
+.college-title-main {
+  font-weight: 700;
+  color: #5b21b6;
+  font-size: 1.1rem;
+}
+
+.college-subtitle-main {
+  color: #7c3aed;
+  font-size: 0.95rem;
+}
+
+/* ------------------ MAIN CONTENT ------------------ */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* INTRO / OVERVIEW SECTION */
+.intro {
+  background: rgba(255, 255, 255, 0.2);
+  color: #905ea3;
+  text-align: center;
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.intro p + p {
+  margin-top: 0.5rem;
+}
+
+/* Training period line under the intro text. */
+.intro-dates {
+  font-size: 0.9rem;
+  color: #fff;
+  opacity: 0.95;
+}
+
+/* SECTION HEADINGS */
+.recent-entries h2,
+.certificates-section h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+/* ENTRY CARDS */
+.entry {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.entry h3 {
+  color: #6a0dad;
+  margin-bottom: 0.5rem;
+}
+
+.entry p {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Date range shown under each week heading. */
+.entry-dates {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7c3aed !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* LINKS INSIDE CARDS
+   TR-102 used these classes in its HTML but never styled them, so they
+   rendered as default blue underlined links. These rules make them match
+   the purple theme. */
+.pdf-link,
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #6d28d9;
+  background: #f3eaff;
+  border: 1px solid #ddc9f7;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.pdf-link:hover,
+.github-link:hover {
+  background: #6d28d9;
+  color: #fff;
+  border-color: #6d28d9;
+}
+
+/* ------------------ CERTIFICATES SECTION ------------------ */
+.certificates-section {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 3rem 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.certificate-card-link {
+  text-decoration: none;
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Greys out a certificate that has not been issued yet. Both certificates
+   are present now, so nothing uses this -- kept in case another card is
+   added before its document exists. */
+.certificate-card.is-pending {
+  opacity: 0.6;
+  border: 1px dashed #c4b5fd;
+}
+
+.certificate-card.is-pending .card-icon,
+.certificate-card.is-pending .card-action {
+  color: #9a8bb8;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #6a0dad;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #4c1d95;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card-action {
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* ------------------ SMALL SCREENS ------------------ */
+@media (max-width: 600px) {
+  .header-logos-bar {
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
+
+  .header-logo-small {
+    width: 52px;
+  }
+
+  .college-title-main {
+    font-size: 0.9rem;
+  }
+
+  .college-subtitle-main {
+    font-size: 0.8rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .recent-entries h2,
+  .certificates-section h2 {
+    font-size: 1.5rem;
+  }
+}
